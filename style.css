@@ -1,0 +1,30 @@
+/* for section 1 */
+input:checked ~ .accordion-content{
+    display: block ;
+
+}
+input:not(:checked) ~ .accordion-content{
+    display: none ;
+}
+
+
+input{
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    appearance: none;
+    background: #00000024;
+    height: 29px;
+    z-index: 0;
+    cursor: pointer;
+}
+label.accordion-header {
+    padding: 0.5rem;
+    background: #00000014;
+    width: 100%;
+    display: block;
+}
+.accordion-content {
+    padding: 1rem;
+}
